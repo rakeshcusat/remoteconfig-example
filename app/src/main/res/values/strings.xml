@@ -1,0 +1,5 @@
+<resources>
+   <string name="app_name">RemoteConfig Example</string>
+   <string name="fetch_value">Fetch value</string>
+   <string name="place_name">Place name</string>
+</resources>

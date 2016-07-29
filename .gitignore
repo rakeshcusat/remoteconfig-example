@@ -2,7 +2,7 @@
 *.apk
 *.ap_
 
-# Files for the ART/Dalvik VM
+# Files for the Dalvik VM
 *.dex
 
 # Java class files
@@ -11,11 +11,13 @@
 # Generated files
 bin/
 gen/
-out/
 
 # Gradle files
 .gradle/
 build/
+/*/build/
+gradle-wrapper.jar
+gradlew
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -26,15 +28,23 @@ proguard/
 # Log Files
 *.log
 
-# Android Studio Navigation editor temp files
-.navigation/
-
-# Android Studio captures folder
-captures/
-
-# Intellij
+# gandroid
+buildSrc
+.idea
+.idea/*
 *.iml
-.idea/workspace.xml
+gradlew.bat
 
-# Keystore files
-*.jks
+gradle/*
+
+# OSX class
+.DS_Store
+
+# Testing creates hprof files
+*.hprof
+
+# local docs build files
+docs/_build/
+
+# stuff in the submodule
+locator/android_locator/certs
